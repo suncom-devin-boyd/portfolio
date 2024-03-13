@@ -1,3 +1,15 @@
 .flexed {
     display: flex;
 }
+
+.light-effect {
+    pointer-events: none;
+    position: fixed;
+    border-radius: 50%;
+    width: 500px; /* Further increased size */
+    height: 500px; /* Further increased size */
+    margin: -250px 0 0 -250px; /* Adjusted for new size */
+    background: radial-gradient(circle, rgba(0,31,63,0.3) 0%, rgba(0,15,31,0.15) 50%, rgba(0,7,15,0) 100%);
+    mix-blend-mode: screen; /* Maintains the light effect */
+    transition: background 0.2s, transform 0.2s;
+}

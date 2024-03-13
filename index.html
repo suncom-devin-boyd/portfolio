@@ -10,6 +10,7 @@
   </head>
   <body>
     <main class="container flexed">
+      <div id="lightEffect" class="light-effect"></div>
       <div>
         <h1>Devin Boyd</h1>
         <h3>Fullstack Engineer</h3>
@@ -74,7 +75,74 @@
             </div>
           </div>
         </section>
+        <section>
+          <h3>Projects</h3>
+          <div>
+            <h3>Middleware Logs</h3>
+            <span>Released Feb 2024</span>
+            <p>
+              API transaction logging middleware with native view and search
+              interface. Log searching is stream optimized to handle gigabit
+              files seamlessly.
+            </p>
+            <ul>
+              <li>Bun.js</li>
+              <li>Elysia.js</li>
+              <li>HTMX</li>
+              <li>Oracle DB</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Vendor Catalog</h3>
+            <span>Released Nov 2023</span>
+            <p>
+              Vendor facing application to manage product catalog. Includes
+              approval process for contract managers, standard CRUD
+              functionality, spreadsheet interpreter.
+            </p>
+            <ul>
+              <li>React</li>
+              <li>PHP Composer</li>
+              <li>Oracle DB</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Product Quotes</h3>
+            <span>Released Mar 2023</span>
+            <p>
+              Procurement application that tracks requests for quotes, includes
+              a quote building tool, evaluation interface with metrics, and
+              generates orders to be sent to vendor owned API enpoints.
+            </p>
+            <ul>
+              <li>React</li>
+              <li>Zend</li>
+              <li>Python</li>
+              <li>Oracle DB</li>
+            </ul>
+          </div>
+          <div>
+            <h3>SLA Submissions</h3>
+            <span>Released April 2022</span>
+            <p>
+              Simple form submission application. Allows for users to input
+              details and money owed when standard level of service is not met.
+            </p>
+            <ul>
+              <li>React</li>
+              <li>Webpack</li>
+              <li>Github Workflows</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </main>
   </body>
+  <script>
+    document.addEventListener("mousemove", function (e) {
+      let light = document.getElementById("lightEffect");
+      light.style.left = e.pageX + "px";
+      light.style.top = e.pageY + "px";
+    });
+  </script>
 </html>
