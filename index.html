@@ -4,13 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/pico.orange.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <title>Devin Boyd</title>
   </head>
   <body>
-    <main class="container flexed">
-      <div id="lightEffect" class="light-effect"></div>
+    <main class="container">
+      <div id="lightEffect" class="light-effect" aria-hidden="true"></div>
       <div>
         <h1>Devin Boyd</h1>
         <h3>Fullstack Engineer</h3>
@@ -20,8 +24,8 @@
         </p>
       </div>
       <div>
-        <section>
-          <h2>About</h2>
+        <section aria-labelledby="about-heading">
+          <h2 id="about-heading">About</h2>
           <p>
             In April of 2021, I decided to make a shift from project management
             to software development. I was fortunate to have a solid
@@ -45,13 +49,15 @@
             favorite podcasts.
           </p>
         </section>
-        <section>
+        <section aria-labelledby="experience-heading">
           <div>
-            <h2>Experience</h2>
+            <h2 id="experience-heading">Experience</h2>
             <div>
-              <div><h3>Jan 2022 - Present</h3></div>
               <div>
-                <h3>Kyra Solutions<br />Fullstack Engineer</h3>
+                <p><b>Jan 2022 - Present</b></p>
+              </div>
+              <div>
+                <p><b>Kyra Solutions</b><br /><b>Fullstack Engineer</b></p>
                 <p>
                   Build and maintain systems that handle enterprise product
                   catalog, billing, and price quoting. Collaberate with state
@@ -62,9 +68,11 @@
               </div>
             </div>
             <div>
-              <div><h3>Nov 2014 - Dec 2021</h3></div>
               <div>
-                <h3>SUNCOM<br />Project Manager</h3>
+                <p><b>Nov 2014 - Dec 2021</b></p>
+              </div>
+              <div>
+                <p><b>SUNCOM</b><br /><b>Project Manager</b></p>
                 <p>
                   Led and consulted on multi-million dollar projects for county
                   MPLS network installations and migrations. Responsible for
@@ -75,10 +83,10 @@
             </div>
           </div>
         </section>
-        <section>
-          <h3>Projects</h3>
-          <div>
-            <h3>Middleware Logs</h3>
+        <section aria-labelledby="projects-heading">
+          <h3 id="projects-heading">Projects</h3>
+          <article>
+            <p><b>Middleware Logs</b></p>
             <span>Released Feb 2024</span>
             <p>
               API transaction logging middleware with native view and search
@@ -91,9 +99,9 @@
               <li>HTMX</li>
               <li>Oracle DB</li>
             </ul>
-          </div>
-          <div>
-            <h3>Vendor Catalog</h3>
+          </article>
+          <article>
+            <p><b>Vendor Catalog</b></p>
             <span>Released Nov 2023</span>
             <p>
               Vendor facing application to manage product catalog. Includes
@@ -105,9 +113,9 @@
               <li>PHP Composer</li>
               <li>Oracle DB</li>
             </ul>
-          </div>
-          <div>
-            <h3>Product Quotes</h3>
+          </article>
+          <article>
+            <p><b>Product Quotes</b></p>
             <span>Released Mar 2023</span>
             <p>
               Procurement application that tracks requests for quotes, includes
@@ -120,9 +128,9 @@
               <li>Python</li>
               <li>Oracle DB</li>
             </ul>
-          </div>
-          <div>
-            <h3>SLA Submissions</h3>
+          </article>
+          <article>
+            <p><b>SLA Submissions</b></p>
             <span>Released April 2022</span>
             <p>
               Simple form submission application. Allows for users to input
@@ -133,7 +141,7 @@
               <li>Webpack</li>
               <li>Github Workflows</li>
             </ul>
-          </div>
+          </article>
         </section>
       </div>
     </main>
@@ -141,8 +149,8 @@
   <script>
     document.addEventListener("mousemove", function (e) {
       let light = document.getElementById("lightEffect");
-      light.style.left = e.pageX + "px";
-      light.style.top = e.pageY + "px";
+      light.style.left = e.clientX + "px";
+      light.style.top = e.clientY + "px";
     });
   </script>
 </html>

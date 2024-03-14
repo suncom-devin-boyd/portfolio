@@ -1,15 +1,71 @@
+:root {
+  --dark-background: #121212;
+  --main-font: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-background);
+  --main-font: "Open Sans", sans-serif;
+  color: #b3b3b3;
+  font-size: 16.5px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+ul {
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Adjusts margin for customization */
+}
+
+ul li {
+  background-color: rgba(139, 0, 0, 0.8); /* Darker red with reduced opacity */
+  color: white; /* White text color */
+  padding: 4px 10px; /* Adds some padding inside the pills */
+  margin-bottom: 10px; /* Adds space between list items vertically */
+  border-radius: 50px; /* Rounded borders for a pill shape */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
+  font-size: 14px; /* Smaller text */
+  width: max-content; /* Ensures the background only covers the content */
+  display: inline-block; /* Makes the list items align in blocks */
+}
+
+ul li:not(:last-child) {
+  margin-right: 10px; /* Adds space between items horizontally */
+}
+
 .flexed {
-    display: flex;
+  display: flex;
 }
 
 .light-effect {
-    pointer-events: none;
-    position: fixed;
-    border-radius: 50%;
-    width: 500px; /* Further increased size */
-    height: 500px; /* Further increased size */
-    margin: -250px 0 0 -250px; /* Adjusted for new size */
-    background: radial-gradient(circle, rgba(0,31,63,0.3) 0%, rgba(0,15,31,0.15) 50%, rgba(0,7,15,0) 100%);
-    mix-blend-mode: screen; /* Maintains the light effect */
-    transition: background 0.2s, transform 0.2s;
+  pointer-events: none;
+  position: fixed;
+  border-radius: 40%; /* Keeps it less of a perfect circle */
+  width: 800px; /* Increased size */
+  height: 800px; /* Increased size */
+  margin: -400px 0 0 -400px; /* Adjusted for new size */
+  background: radial-gradient(
+    circle,
+    rgba(0, 31, 63, 0.5) 0%,
+    rgba(0, 15, 31, 0.3) 50%,
+    rgba(0, 7, 15, 0.1) 100%
+  );
+  /* Brighter gradient */
+  mix-blend-mode: screen;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.project-container {
+  padding: 1em;
 }
