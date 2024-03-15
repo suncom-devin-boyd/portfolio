@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -22,12 +26,10 @@
     <main class="container">
       <div id="lightEffect" class="light-effect" aria-hidden="true"></div>
       <div>
+        <p class="teal">Hello! My name is,</p>
         <h1 class="main-title">Devin Boyd</h1>
-        <p class="main-title"><b>Fullstack Engineer</b></p>
-        <p>
-          I specialize in designing and implementing fast, reliable, and secure
-          enterprise solutions to meet modern business requirements.
-        </p>
+        <p class="main-title"><b>Full Stack Developer</b></p>
+
         <div class="flexed social">
           <div>
             <img
@@ -57,6 +59,14 @@
             </a>
           </div>
         </div>
+
+        <p>
+          I specialize in designing and implementing fast, reliable, and secure
+          enterprise solutions to meet modern business requirements.
+        </p>
+        <div class="flexed center">
+          <img src="/img/headshot/my_pic.png" class="headshot" />
+        </div>
       </div>
       <div>
         <section aria-labelledby="about-heading">
@@ -79,9 +89,9 @@
             systems I build.
           </p>
           <p>
-            I currently live in Nagoya, Japan and spend my extra time studying
-            Kanji, getting lost in high fantasy, and taking long hikes with my
-            favorite podcasts.
+            I currently live in Nagoya, Japan and spend my extra time getting
+            lost in high fantasy, then I come back to reality by watching cheesy
+            reality TV with my wife and hiking with my favorite podcasts.
           </p>
         </section>
         <section aria-labelledby="experience-heading">
@@ -118,13 +128,11 @@
           <h2 id="projects-heading">Projects</h2>
           <article>
             <p><b>Middleware Logs</b></p>
-            <span>Released Feb 2024</span>
             <p>
-              API transaction logging middleware with native view and search
-              interface. Log searching is stream optimized to handle gigabit
-              files seamlessly.
+              API transaction logging middleware with native search interface.
+              Stream optimized to handle gigabit files seamlessly.
             </p>
-            <ul>
+            <ul class="skills">
               <li>Bun.js</li>
               <li>Elysia.js</li>
               <li>HTMX</li>
@@ -133,13 +141,12 @@
           </article>
           <article>
             <p><b>Vendor Catalog</b></p>
-            <span>Released Nov 2023</span>
             <p>
               Vendor facing application to manage product catalog. Includes
               approval process for contract managers, standard CRUD
               functionality, spreadsheet interpreter.
             </p>
-            <ul>
+            <ul class="skills">
               <li>React</li>
               <li>PHP Composer</li>
               <li>Oracle DB</li>
@@ -147,13 +154,12 @@
           </article>
           <article>
             <p><b>Product Quotes</b></p>
-            <span>Released Mar 2023</span>
             <p>
               Procurement application that tracks requests for quotes, includes
               a quote building tool, evaluation interface with metrics, and
               generates orders to be sent to vendor owned API enpoints.
             </p>
-            <ul>
+            <ul class="skills">
               <li>React</li>
               <li>Zend</li>
               <li>Python</li>
@@ -162,12 +168,11 @@
           </article>
           <article>
             <p><b>SLA Submissions</b></p>
-            <span>Released April 2022</span>
             <p>
               Simple form submission application. Allows for users to input
               details and money owed when standard level of service is not met.
             </p>
-            <ul>
+            <ul class="skills">
               <li>React</li>
               <li>Webpack</li>
               <li>Github Workflows</li>

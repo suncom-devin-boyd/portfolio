@@ -1,30 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
+
 :root {
   --dark-background: #121212;
-  --header-color: #c9d7e3;
+  --basic-text: #b3b3b3;
+  --header-color: #b0cdf1;
+  --teal-highlight: #3dffe0;
+  /* 3DFFE0 */
 }
 
 body {
   margin: 0;
   background-color: var(--dark-background);
-  color: #b3b3b3;
+  color: var(--basic-text);
   font-size: 16.5px;
+}
+
+.container {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 h1 {
   font-size: 2.5em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 h2 {
   font-size: 1.7em;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 0;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
-p{
+p {
   font-size: 0.9em;
+}
+
+span {
+  font-size: 0.6 !important;
 }
 
 ul {
@@ -32,43 +48,62 @@ ul {
   margin: 0; /* Adjusts margin for customization */
 }
 
-ul li {
-  background-color: rgba(139, 0, 0, 0.8); /* Darker red with reduced opacity */
-  color: white; /* White text color */
-  padding: 4px 10px; /* Adds some padding inside the pills */
-  margin-bottom: 10px; /* Adds space between list items vertically */
-  border-radius: 50px; /* Rounded borders for a pill shape */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for depth */
-  font-size: 14px; /* Smaller text */
-  width: max-content; /* Ensures the background only covers the content */
-  display: inline-block; /* Makes the list items align in blocks */
+.skills > li {
+  color: var(--teal-highlight);
+  padding: 0px 4px;
+  border-radius: 0px;
+  font-size: 12px;
+  width: max-content;
+  display: inline-block;
+  border: 2px solid #009571;
+  background-color: transparent;
 }
 
 ul li:not(:last-child) {
-  margin-right: 10px; /* Adds space between items horizontally */
+  margin-right: 10px;
 }
 
-.main-title{
+.main-title {
   color: var(--header-color);
   padding-bottom: 10px;
   margin: 0;
 }
 
-.subtitle > p{
-    padding-bottom: 0;
-    margin-bottom: 0;
+.subtitle > p {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .flexed {
   display: flex;
 }
 
+.center {
+  justify-content: center;
+}
+
 .social {
-    padding-bottom: 3em;
+  padding-bottom: 15px;
 }
 
 .social > div {
-    padding-right: 10px;
+  padding-right: 10px;
+}
+
+.teal {
+  color: var(--teal-highlight);
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+.headshot {
+  height: 180px;
+  border-radius: 30px;
+  padding-bottom: 1em;
+}
+.tiny-head {
+  height: 120px;
+  border-radius: 30px;
+  padding-bottom: 1em;
 }
 
 .light-effect {
