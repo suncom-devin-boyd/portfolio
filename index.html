@@ -8,20 +8,55 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/pico.orange.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <title>Devin Boyd</title>
   </head>
   <body>
     <main class="container">
       <div id="lightEffect" class="light-effect" aria-hidden="true"></div>
       <div>
-        <h1>Devin Boyd</h1>
-        <h3>Fullstack Engineer</h3>
+        <h1 class="main-title">Devin Boyd</h1>
+        <p class="main-title"><b>Fullstack Engineer</b></p>
         <p>
           I specialize in designing and implementing fast, reliable, and secure
           enterprise solutions to meet modern business requirements.
         </p>
+        <div class="flexed social">
+          <div>
+            <img
+              src="/img/social/email.svg"
+              alt="email icon"
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <div padding="10px">
+            <img
+              src="/img/social/github.svg"
+              alt="email icon"
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <div padding="10px">
+            <a target="_blank" href="https://www.linkedin.com/in/devboyd/">
+              <img
+                src="/img/social/linkedin.svg"
+                alt="email icon"
+                height="20px"
+                width="20px"
+                padding="10px"
+              />
+            </a>
+          </div>
+        </div>
       </div>
       <div>
         <section aria-labelledby="about-heading">
@@ -53,38 +88,34 @@
           <div>
             <h2 id="experience-heading">Experience</h2>
             <div>
-              <div>
-                <p><b>Jan 2022 - Present</b></p>
+              <div class="subtitle">
+                <p>Jan 2022 - Present</p>
+                <h3>Fullstack Engineer - Kyra Solutions</h3>
               </div>
-              <div>
-                <p><b>Kyra Solutions</b><br /><b>Fullstack Engineer</b></p>
-                <p>
-                  Build and maintain systems that handle enterprise product
-                  catalog, billing, and price quoting. Collaberate with state
-                  government clientele, product managers, telecom providers, and
-                  developers. Work to deliver robust and reliable systems used
-                  to sell and track critical telecommunication assets.
-                </p>
-              </div>
+              <p>
+                Build and maintain systems that handle enterprise product
+                catalog, billing, and price quoting. Collaberate with state
+                government clientele, product managers, telecom providers, and
+                developers. Work to deliver robust and reliable systems used to
+                sell and track critical telecommunication assets.
+              </p>
             </div>
             <div>
-              <div>
-                <p><b>Nov 2014 - Dec 2021</b></p>
+              <div class="subtitle">
+                <p>Nov 2014 - Dec 2021</p>
+                <h3>Project Manager - SUNCOM</h3>
               </div>
-              <div>
-                <p><b>SUNCOM</b><br /><b>Project Manager</b></p>
-                <p>
-                  Led and consulted on multi-million dollar projects for county
-                  MPLS network installations and migrations. Responsible for
-                  budget, schedule, procurement, and compliance activities for
-                  State of Florida telecommunication projects.
-                </p>
-              </div>
+              <p>
+                Led and consulted on multi-million dollar projects for county
+                MPLS network installations and migrations. Responsible for
+                budget, schedule, procurement, and compliance activities for
+                State of Florida telecommunication projects.
+              </p>
             </div>
           </div>
         </section>
         <section aria-labelledby="projects-heading">
-          <h3 id="projects-heading">Projects</h3>
+          <h2 id="projects-heading">Projects</h2>
           <article>
             <p><b>Middleware Logs</b></p>
             <span>Released Feb 2024</span>
