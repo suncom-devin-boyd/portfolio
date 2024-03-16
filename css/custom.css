@@ -97,7 +97,6 @@ ul li:not(:last-child) {
 
 .headshot {
   height: 180px;
-  border-radius: 30px;
   padding-bottom: 1em;
 }
 .tiny-head {
@@ -127,3 +126,52 @@ ul li:not(:last-child) {
 .project-container {
   padding: 1em;
 }
+
+/* Container for the flip effect and perspective */
+.flip-card {
+    perspective: 1000px; /* Adjust as necessary for the flip effect depth */
+    margin-bottom: 4em;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust based on your content */
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Optional: Adds some shadow for better effect */
+  }
+  
+  /* The front and back side of the flip card */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when facing away */
+  }
+  
+  /* Style for the front part of the card */
+  .flip-card-front {
+    color: black;
+  }
+
+  .flip-card-front > article {
+    height: 255px;
+  }
+  
+  /* Style for the back part of the card */
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-back > img {
+    max-height: 255px;
+  }
+
+  /* Handle the flip action on hover */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
