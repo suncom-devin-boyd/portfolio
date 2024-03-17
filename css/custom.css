@@ -15,8 +15,13 @@ body {
   font-size: 16.5px;
 }
 
+section{
+  padding-bottom: 3em;
+}
+
 .container {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  max-width: 1000px;
 }
 
 h1 {
@@ -84,11 +89,13 @@ ul li:not(:last-child) {
 
 .social {
   padding-bottom: 15px;
+  justify-content: center;
 }
 
-.social > div {
+.social > div:not(:last-child) {
   padding-right: 30px;
 }
+
 
 .teal {
   color: var(--teal-highlight);
@@ -167,14 +174,17 @@ ul li:not(:last-child) {
     .title-container {
       display: flex;
       justify-content: flex-start;
-      padding-bottom: 3em;
     }
     .title-container > div{
       width: 50%;
     }
     .title-img{
       justify-content: flex-start;
-      padding-left: 1em;
+      padding-left: 5em;
+    }
+    .social{
+      justify-content: flex-start;
+      padding-bottom: 3em;
     }
   }
   

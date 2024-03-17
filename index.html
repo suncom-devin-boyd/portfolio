@@ -23,13 +23,14 @@
   </head>
   <body>
     <main class="container">
-      <div class="title-container">
+      <section aria-labelledby="title-heading">
+        <div class="title-container">
         <div class="title-text">
           <p class="teal">Hello! My name is,</p>
           <h1 class="main-title">Devin Boyd</h1>
           <p class="main-title"><b>Full Stack Developer</b></p>
           <p>
-            I'm a full stack developer and tech hobbyist. I build modern
+            I'm a passionate full stack developer and tech hobbyist. I build modern
             enterprise solutions to solve complex business requirements.
             Welcome!
           </p>
@@ -39,29 +40,55 @@
         </div>
       </div>
       <div>
+        <div class="flexed social">
+          <div>
+            <img
+              src="img/social/email.svg"
+              alt="email icon"
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <div>
+            <img
+              src="img/social/github.svg"
+              alt="email icon"
+              height="20px"
+              width="20px"
+            />
+          </div>
+          <div>
+            <a target="_blank" href="https://www.linkedin.com/in/devboyd/">
+              <img
+                src="img/social/linkedin.svg"
+                alt="email icon"
+                height="20px"
+                width="20px"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      
         <section aria-labelledby="about-heading">
           <h2 id="about-heading">About</h2>
           <p>
-            In April of 2021, I decided to make a shift from project management
-            to software development. I was fortunate to have a solid
-            relationship with a systems team patient enough to take me under
-            their wing. Today, I am the lead developer responsible for the
-            maintainance and enhancement of several critical applications and
-            APIs.
+            I work as a contractor on a team that builds enterprise solutions
+            for Florida's telecom brand "SUNCOM". Most of my time is spent in a
+            heavy Oracle environment, tinkering with PL/SQL to achieve the bulk
+            of our system functionality. I also build React interfaces and
+            middleware tooling.
           </p>
           <p>
-            I've spent most of my time developing a heavy Oracle environment as
-            a contractor for State Government. I've come to enjoy and appreciate
-            the power of PL/SQL, and have learned the capacity for the language
-            to accomplish pretty much anything. I am regularly tasked with
-            building out React interfaces and middleware tooling. The most
-            satisfying moments for me are showcasing the sleek performance of
-            systems I build.
+            In a prior life, I was a project manager for 8 years, and maintain my
+            CompTIA Security+ / PMP. I am currently looking for work, so if you
+            like any of my skills, let's talk!
           </p>
           <p>
             I currently live in Nagoya, Japan and spend my extra time getting
-            lost in high fantasy, then I come back to reality by watching cheesy
-            reality TV with my wife and hiking with my favorite podcasts.
+            lost in high fantasy, then I come back to "the real world" by
+            watching cheesy reality TV with my wife and hiking with my favorite
+            podcasts.
           </p>
         </section>
         <section aria-labelledby="experience-heading">
@@ -74,10 +101,10 @@
               </div>
               <p>
                 Build and maintain systems that handle enterprise product
-                catalog, billing, and price quoting. Collaberate with state
+                catalog, billing, and price quoting. Collaborate with state
                 government clientele, product managers, telecom providers, and
-                developers. Work to deliver robust and reliable systems used to
-                sell and track critical telecommunication assets.
+                developers. Work to deliver robust, secure, and reliable systems
+                used to sell and track critical telecommunication assets.
               </p>
             </div>
             <div>
@@ -103,8 +130,8 @@
                   <p><b>Middleware Logs</b></p>
                   <p>
                     API transaction logging middleware with native search
-                    interface. Stream optimized to handle gigabit files
-                    seamlessly.
+                    interface. Stream optimized to handle gigabit files with
+                    search and filtering seamlessly.
                   </p>
                   <ul class="skills">
                     <li>Bun.js</li>
@@ -115,7 +142,11 @@
                 </article>
               </div>
               <div class="flip-card-back">
-                <img src="img/projects/catalog_pic.png" />
+                <img
+                  src="img/projects/log_pic.png"
+                  onclick="toggleModal(event)"
+                  data-target="log-modal"
+                />
               </div>
             </div>
           </div>
@@ -125,9 +156,9 @@
                 <article>
                   <p><b>Vendor Catalog</b></p>
                   <p>
-                    Vendor facing application to manage product catalog.
-                    Includes approval process for contract managers, standard
-                    CRUD functionality, spreadsheet interpreter.
+                    Telecom Vendor facing application to manage product
+                    catalogs. Includes approval process for contract managers,
+                    standard CRUD functionality, and spreadsheet interpreter.
                   </p>
                   <ul class="skills">
                     <li>React</li>
@@ -137,7 +168,11 @@
                 </article>
               </div>
               <div class="flip-card-back">
-                <img src="img/projects/catalog_pic.png" />
+                <img
+                  src="img/projects/catalog_pic.png"
+                  onclick="toggleModal(event)"
+                  data-target="catalog-modal"
+                />
               </div>
             </div>
           </div>
@@ -150,7 +185,7 @@
                     Procurement application that tracks requests for quotes,
                     includes a quote building tool, evaluation interface with
                     metrics, and generates orders to be sent to vendor owned API
-                    enpoints.
+                    endpoints.
                   </p>
                   <ul class="skills">
                     <li>React</li>
@@ -161,7 +196,11 @@
                 </article>
               </div>
               <div class="flip-card-back">
-                <img src="img/projects/quotes_pic.png" />
+                <img
+                  src="img/projects/quotes_pic.png"
+                  onclick="toggleModal(event)"
+                  data-target="quotes-modal"
+                />
               </div>
             </div>
           </div>
@@ -173,7 +212,7 @@
                   <p>
                     Simple form submission application. Allows for users to
                     input details and money owed when standard level of service
-                    is not met.
+                    is not met, replacing a deprecated ftp process.
                   </p>
                   <ul class="skills">
                     <li>React</li>
@@ -183,50 +222,165 @@
                 </article>
               </div>
               <div class="flip-card-back">
-                <img src="img/projects/sla_pic.png" />
+                <img
+                  src="img/projects/sla_pic.png"
+                  onclick="toggleModal(event)"
+                  data-target="sla-modal"
+                />
               </div>
             </div>
           </div>
         </section>
-        <section>
-          <div class="flexed social">
-            <div>
-              <img
-                src="img/social/email.svg"
-                alt="email icon"
-                height="20px"
-                width="20px"
-              />
-            </div>
-            <div padding="10px">
-              <img
-                src="img/social/github.svg"
-                alt="email icon"
-                height="20px"
-                width="20px"
-              />
-            </div>
-            <div padding="10px">
-              <a target="_blank" href="https://www.linkedin.com/in/devboyd/">
-                <img
-                  src="img/social/linkedin.svg"
-                  alt="email icon"
-                  height="20px"
-                  width="20px"
-                  padding="10px"
-                />
-              </a>
-            </div>
-          </div>
-        </section>
       </div>
+      <section aria-labelledby="hidden-modals">
+        <dialog id="log-modal">
+          <article>
+            <header>
+              <button
+                aria-label="Close"
+                rel="prev"
+                data-target="log-modal"
+                onclick="toggleModal(event)"
+              ></button>
+              <h3>Log Viewer</h3>
+            </header>
+            <img
+              src="img/projects/log_pic.png"
+              onclick="toggleModal(event)"
+              data-target="log-modal"
+              loading="lazy"
+            />
+          </article>
+        </dialog>
+        <dialog id="catalog-modal">
+          <article>
+            <header>
+              <button
+                aria-label="Close"
+                rel="prev"
+                data-target="catalog-modal"
+                onclick="toggleModal(event)"
+              ></button>
+              <h3>Catalog Changes</h3>
+            </header>
+            <img
+              src="img/projects/catalog_pic.png"
+              onclick="toggleModal(event)"
+              data-target="catalog-modal"
+              loading="lazy"
+            />
+          </article>
+        </dialog>
+        <dialog id="quotes-modal">
+          <article>
+            <header>
+              <button
+                aria-label="Close"
+                rel="prev"
+                data-target="quotes-modal"
+                onclick="toggleModal(event)"
+              ></button>
+              <h3>Quotes Manager</h3>
+            </header>
+            <img
+              src="img/projects/quotes_pic.png"
+              onclick="toggleModal(event)"
+              data-target="quotes-modal"
+              loading="lazy"
+            />
+          </article>
+        </dialog>
+        <dialog id="sla-modal">
+          <article>
+            <header>
+              <button
+                aria-label="Close"
+                rel="prev"
+                data-target="sla-modal"
+                onclick="toggleModal(event)"
+              ></button>
+              <h3>Violation Submissions</h3>
+            </header>
+            <img
+              src="img/projects/sla_pic.png"
+              onclick="toggleModal(event)"
+              data-target="sla-modal"
+              loading="lazy"
+            />
+          </article>
+        </dialog>
+      </section>
     </main>
   </body>
   <script>
-    document.addEventListener("mousemove", function (e) {
-      let light = document.getElementById("lightEffect");
-      light.style.left = e.clientX + "px";
-      light.style.top = e.clientY + "px";
+    const isOpenClass = "modal-is-open";
+    const openingClass = "modal-is-opening";
+    const closingClass = "modal-is-closing";
+    const scrollbarWidthCssVar = "--pico-scrollbar-width";
+    const animationDuration = 400; // ms
+    let visibleModal = null;
+
+    // Toggle modal
+    const toggleModal = (event) => {
+      event.preventDefault();
+      const targetId = event.currentTarget.getAttribute("data-target");
+      const modal = document.getElementById(event.currentTarget.dataset.target);
+      if (!modal) return;
+      modal && (modal.open ? closeModal(modal) : openModal(modal));
+    };
+
+    // Open modal
+    const openModal = (modal) => {
+      const { documentElement: html } = document;
+      const scrollbarWidth = getScrollbarWidth();
+      if (scrollbarWidth) {
+        html.style.setProperty(scrollbarWidthCssVar, `${scrollbarWidth}px`);
+      }
+      html.classList.add(isOpenClass, openingClass);
+      setTimeout(() => {
+        visibleModal = modal;
+        html.classList.remove(openingClass);
+      }, animationDuration);
+      modal.showModal();
+    };
+
+    // Close modal
+    const closeModal = (modal) => {
+      visibleModal = null;
+      const { documentElement: html } = document;
+      html.classList.add(closingClass);
+      setTimeout(() => {
+        html.classList.remove(closingClass, isOpenClass);
+        html.style.removeProperty(scrollbarWidthCssVar);
+        modal.close();
+      }, animationDuration);
+    };
+
+    // Close with a click outside
+    document.addEventListener("click", (event) => {
+      if (visibleModal === null) return;
+      const modalContent = visibleModal.querySelector("article");
+      const isClickInside = modalContent.contains(event.target);
+      !isClickInside && closeModal(visibleModal);
     });
+
+    // Close with Esc key
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && visibleModal) {
+        closeModal(visibleModal);
+      }
+    });
+
+    // Get scrollbar width
+    const getScrollbarWidth = () => {
+      const scrollbarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+      return scrollbarWidth;
+    };
+
+    // Is scrollbar visible
+    const isScrollbarVisible = () => {
+      return document.body.scrollHeight > screen.height;
+    };
   </script>
 </html>
