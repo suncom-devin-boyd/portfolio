@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap");
 
 :root {
-  --dark-background: #121212;
+  --dark-background: #0f172a;
   --basic-text: #b3b3b3;
   --header-color: #b0cdf1;
   --teal-highlight: #3dffe0;
@@ -87,7 +87,7 @@ ul li:not(:last-child) {
 }
 
 .social > div {
-  padding-right: 10px;
+  padding-right: 30px;
 }
 
 .teal {
@@ -95,32 +95,20 @@ ul li:not(:last-child) {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
-.headshot {
-  height: 180px;
+.title-img{
+  display: flex;
+  justify-content: center;
+}
+
+.title-img > img {
+  height: 30vh;
   padding-bottom: 1em;
 }
+
 .tiny-head {
   height: 120px;
   border-radius: 30px;
   padding-bottom: 1em;
-}
-
-.light-effect {
-  pointer-events: none;
-  position: fixed;
-  border-radius: 40%; /* Keeps it less of a perfect circle */
-  width: 800px; /* Increased size */
-  height: 800px; /* Increased size */
-  margin: -400px 0 0 -400px; /* Adjusted for new size */
-  background: radial-gradient(
-    circle,
-    rgba(0, 31, 63, 0.5) 0%,
-    rgba(0, 15, 31, 0.3) 50%,
-    rgba(0, 7, 15, 0.1) 100%
-  );
-  /* Brighter gradient */
-  mix-blend-mode: screen;
-  transition: background 0.2s, transform 0.2s;
 }
 
 .project-container {
@@ -173,5 +161,20 @@ ul li:not(:last-child) {
   /* Handle the flip action on hover */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+  }
+  
+  @media (min-width: 600px) {
+    .title-container {
+      display: flex;
+      justify-content: flex-start;
+      padding-bottom: 3em;
+    }
+    .title-container > div{
+      width: 50%;
+    }
+    .title-img{
+      justify-content: flex-start;
+      padding-left: 1em;
+    }
   }
   
