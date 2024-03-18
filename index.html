@@ -25,43 +25,46 @@
     <main class="container">
       <section aria-labelledby="title-heading">
         <div class="title-container">
-        <div class="title-text">
-          <p class="teal">Hello! My name is,</p>
-          <h1 class="main-title">Devin Boyd</h1>
-          <p class="main-title"><b>Full Stack Developer</b></p>
-          <p>
-            I'm a passionate full stack developer and tech hobbyist. I build modern
-            enterprise solutions to solve complex business requirements.
-            Welcome!
-          </p>
+          <div class="title-text">
+            <p class="teal">Hello! My name is,</p>
+            <h1 class="main-title">Devin Boyd</h1>
+            <p class="main-title"><b>Full Stack Developer</b></p>
+            <p>
+              I'm a passionate full stack developer and tech hobbyist. I build
+              modern enterprise solutions to solve complex business
+              requirements. Welcome!
+            </p>
+          </div>
+          <div class="title-img">
+            <img src="img/headshot/devs_pic.jpg" class="headshot" />
+          </div>
         </div>
-        <div class="title-img">
-          <img src="img/headshot/devs_pic.jpg" class="headshot" />
-        </div>
-      </div>
-      <div>
         <div class="flexed social">
           <div>
-            <img
-              src="img/social/email.svg"
-              alt="email icon"
-              height="20px"
-              width="20px"
-            />
+            <a href="mailto:djb_projects@yahoo.com">
+              <img
+                src="img/social/email.svg"
+                alt="email icon"
+                height="20px"
+                width="20px"
+              />
+            </a>
           </div>
           <div>
-            <img
-              src="img/social/github.svg"
-              alt="email icon"
-              height="20px"
-              width="20px"
-            />
+            <a target="_blank" href="https://github.com/suncom-devin-boyd">
+              <img
+                src="img/social/github.svg"
+                alt="github icon"
+                height="20px"
+                width="20px"
+              />
+            </a>
           </div>
           <div>
             <a target="_blank" href="https://www.linkedin.com/in/devboyd/">
               <img
                 src="img/social/linkedin.svg"
-                alt="email icon"
+                alt="linkedin icon"
                 height="20px"
                 width="20px"
               />
@@ -69,169 +72,166 @@
           </div>
         </div>
       </section>
-      
-        <section aria-labelledby="about-heading">
-          <h2 id="about-heading">About</h2>
-          <p>
-            I work as a contractor on a team that builds enterprise solutions
-            for Florida's telecom brand "SUNCOM". Most of my time is spent in a
-            heavy Oracle environment, tinkering with PL/SQL to achieve the bulk
-            of our system functionality. I also build React interfaces and
-            middleware tooling.
-          </p>
-          <p>
-            In a prior life, I was a project manager for 8 years, and maintain my
-            CompTIA Security+ / PMP. I am currently looking for work, so if you
-            like any of my skills, let's talk!
-          </p>
-          <p>
-            I currently live in Nagoya, Japan and spend my extra time getting
-            lost in high fantasy, then I come back to "the real world" by
-            watching cheesy reality TV with my wife and hiking with my favorite
-            podcasts.
-          </p>
-        </section>
-        <section aria-labelledby="experience-heading">
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I work as a contractor on a team that builds enterprise solutions for
+          Florida's telecom brand "SUNCOM". Most of my time is spent in a heavy
+          Oracle environment, tinkering with PL/SQL to achieve the bulk of our
+          system functionality. I also build React interfaces and middleware
+          tooling.
+        </p>
+        <p>
+          In a prior life, I was a project manager for 8 years, and maintain my
+          CompTIA Security+ / PMP. I am currently looking for work, so if you
+          like any of my skills, let's talk!
+        </p>
+        <p>
+          I currently live in Nagoya, Japan and spend my extra time getting lost
+          in high fantasy, then I come back to "the real world" by watching
+          cheesy reality TV with my wife and hiking with my favorite podcasts.
+        </p>
+      </section>
+      <section aria-labelledby="experience-heading">
+        <div>
+          <h2 id="experience-heading">Experience</h2>
           <div>
-            <h2 id="experience-heading">Experience</h2>
-            <div>
-              <div class="subtitle">
-                <p>Jan 2022 - Present</p>
-                <h3>Fullstack Engineer - Kyra Solutions</h3>
-              </div>
-              <p>
-                Build and maintain systems that handle enterprise product
-                catalog, billing, and price quoting. Collaborate with state
-                government clientele, product managers, telecom providers, and
-                developers. Work to deliver robust, secure, and reliable systems
-                used to sell and track critical telecommunication assets.
-              </p>
+            <div class="subtitle">
+              <p>Jan 2022 - Present</p>
+              <h3>Fullstack Engineer - Kyra Solutions</h3>
             </div>
-            <div>
-              <div class="subtitle">
-                <p>Nov 2014 - Dec 2021</p>
-                <h3>Project Manager - SUNCOM</h3>
-              </div>
-              <p>
-                Led and consulted on multi-million dollar projects for county
-                MPLS network installations and migrations. Responsible for
-                budget, schedule, procurement, and compliance activities for
-                State of Florida telecommunication projects.
-              </p>
+            <p>
+              Build and maintain systems that handle enterprise product catalog,
+              billing, and price quoting. Collaborate with state government
+              clientele, product managers, telecom providers, and developers.
+              Work to deliver robust, secure, and reliable systems used to sell
+              and track critical telecommunication assets.
+            </p>
+          </div>
+          <div>
+            <div class="subtitle">
+              <p>Nov 2014 - Dec 2021</p>
+              <h3>Project Manager - SUNCOM</h3>
+            </div>
+            <p>
+              Led and consulted on multi-million dollar projects for county MPLS
+              network installations and migrations. Responsible for budget,
+              schedule, procurement, and compliance activities for State of
+              Florida telecommunication projects.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <article>
+                <p><b>Middleware Logs</b></p>
+                <p>
+                  API transaction logging middleware with native search
+                  interface. Stream optimized to handle gigabit files with
+                  search and filtering seamlessly.
+                </p>
+                <ul class="skills">
+                  <li>Bun.js</li>
+                  <li>Elysia.js</li>
+                  <li>HTMX</li>
+                  <li>Oracle DB</li>
+                </ul>
+              </article>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="img/projects/log_pic.png"
+                onclick="toggleModal(event)"
+                data-target="log-modal"
+              />
             </div>
           </div>
-        </section>
-        <section aria-labelledby="projects-heading">
-          <h2 id="projects-heading">Projects</h2>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <article>
-                  <p><b>Middleware Logs</b></p>
-                  <p>
-                    API transaction logging middleware with native search
-                    interface. Stream optimized to handle gigabit files with
-                    search and filtering seamlessly.
-                  </p>
-                  <ul class="skills">
-                    <li>Bun.js</li>
-                    <li>Elysia.js</li>
-                    <li>HTMX</li>
-                    <li>Oracle DB</li>
-                  </ul>
-                </article>
-              </div>
-              <div class="flip-card-back">
-                <img
-                  src="img/projects/log_pic.png"
-                  onclick="toggleModal(event)"
-                  data-target="log-modal"
-                />
-              </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <article>
+                <p><b>Vendor Catalog</b></p>
+                <p>
+                  Telecom Vendor facing application to manage product catalogs.
+                  Includes approval process for contract managers, standard CRUD
+                  functionality, and spreadsheet interpreter.
+                </p>
+                <ul class="skills">
+                  <li>React</li>
+                  <li>PHP Composer</li>
+                  <li>Oracle DB</li>
+                </ul>
+              </article>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="img/projects/catalog_pic.png"
+                onclick="toggleModal(event)"
+                data-target="catalog-modal"
+              />
             </div>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <article>
-                  <p><b>Vendor Catalog</b></p>
-                  <p>
-                    Telecom Vendor facing application to manage product
-                    catalogs. Includes approval process for contract managers,
-                    standard CRUD functionality, and spreadsheet interpreter.
-                  </p>
-                  <ul class="skills">
-                    <li>React</li>
-                    <li>PHP Composer</li>
-                    <li>Oracle DB</li>
-                  </ul>
-                </article>
-              </div>
-              <div class="flip-card-back">
-                <img
-                  src="img/projects/catalog_pic.png"
-                  onclick="toggleModal(event)"
-                  data-target="catalog-modal"
-                />
-              </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <article>
+                <p><b>Product Quotes</b></p>
+                <p>
+                  Procurement application that tracks requests for quotes,
+                  includes a quote building tool, evaluation interface with
+                  metrics, and generates orders to be sent to vendor owned API
+                  endpoints.
+                </p>
+                <ul class="skills">
+                  <li>React</li>
+                  <li>Zend</li>
+                  <li>Python</li>
+                  <li>Oracle DB</li>
+                </ul>
+              </article>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="img/projects/quotes_pic.png"
+                onclick="toggleModal(event)"
+                data-target="quotes-modal"
+              />
             </div>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <article>
-                  <p><b>Product Quotes</b></p>
-                  <p>
-                    Procurement application that tracks requests for quotes,
-                    includes a quote building tool, evaluation interface with
-                    metrics, and generates orders to be sent to vendor owned API
-                    endpoints.
-                  </p>
-                  <ul class="skills">
-                    <li>React</li>
-                    <li>Zend</li>
-                    <li>Python</li>
-                    <li>Oracle DB</li>
-                  </ul>
-                </article>
-              </div>
-              <div class="flip-card-back">
-                <img
-                  src="img/projects/quotes_pic.png"
-                  onclick="toggleModal(event)"
-                  data-target="quotes-modal"
-                />
-              </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <article>
+                <p><b>SLA Submissions</b></p>
+                <p>
+                  Simple form submission application. Allows for users to input
+                  details and money owed when standard level of service is not
+                  met, replacing a deprecated ftp process.
+                </p>
+                <ul class="skills">
+                  <li>React</li>
+                  <li>Webpack</li>
+                  <li>Github Workflows</li>
+                </ul>
+              </article>
+            </div>
+            <div class="flip-card-back">
+              <img
+                src="img/projects/sla_pic.png"
+                onclick="toggleModal(event)"
+                data-target="sla-modal"
+              />
             </div>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <article>
-                  <p><b>SLA Submissions</b></p>
-                  <p>
-                    Simple form submission application. Allows for users to
-                    input details and money owed when standard level of service
-                    is not met, replacing a deprecated ftp process.
-                  </p>
-                  <ul class="skills">
-                    <li>React</li>
-                    <li>Webpack</li>
-                    <li>Github Workflows</li>
-                  </ul>
-                </article>
-              </div>
-              <div class="flip-card-back">
-                <img
-                  src="img/projects/sla_pic.png"
-                  onclick="toggleModal(event)"
-                  data-target="sla-modal"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <section aria-labelledby="hidden-modals">
         <dialog id="log-modal">
           <article>
